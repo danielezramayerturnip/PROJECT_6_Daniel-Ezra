@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tebak Angka</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="kotak">
+        <h1>Tebak Angka</h1>
+        <p class="intro">Aku memikirkan angka dari 1 sampai 100. Bisa kamu tebak?</p>
+
+        <p class="nyawa">Nyawa: <strong id="nyawa">7</strong></p>
+
+        <div class="baris">
+            <input id="input-tebakan" type="number" min="1" max="100" placeholder="1 - 100">
+            <button id="tombol-tebak" type="button">Tebak</button>
+        </div>
+
+        <!-- Pesan hasil tebakan, diisi oleh script.js -->
+        <p id="pesan" class="pesan" aria-live="polite">Ketik angka lalu tekan Tebak.</p>
+        <p id="riwayat" class="riwayat"></p>
+
+        <button id="tombol-ulang" type="button" class="ulang">Main lagi</button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
